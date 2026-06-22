@@ -1,0 +1,247 @@
+@import url('style.css');
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Featured Section */
+.featured {
+    padding: 60px 0;
+}
+.cooking-text {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.featured h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.food-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    padding: 15px 20px 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.food-card .category {
+    padding: 0 20px;
+    color: #ff6b35;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.food-card .description {
+    padding: 5px 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.food-card .price {
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff6b35;
+}
+
+.food-card form {
+    padding: 0 20px 20px;
+}
+
+.food-card input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-add {
+    background-color: #ff6b35;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-add:hover {
+    background-color: #e55a2b;
+}
+
+/* Order Success */
+.order-success {
+    padding: 60px 0;
+    min-height: 60vh;
+}
+
+.success-box {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.success-box h2 {
+    color: #28a745;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.success-box p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.actions {
+    margin-top: 30px;
+}
+
+/* ===== CHEF SECTION ===== */
+.chef-section {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    text-align: center;
+}
+
+/* TITLE */
+.chef-section h2 {
+    font-size: 30px;
+    color: #ff006e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* PARAGRAPH */
+.cooking-text {
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+    width: 75%;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+/* GRID */
+.chef-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    width: 9%;
+    margin: auto;
+}
+
+/* CARD */
+.chef-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.chef-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.showcase {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.showcase h2 {
+    font-size: 28px;
+    color: #ff006e;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+}
+
+/* CARD */
+.image-card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.image-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.image-card img {
+    height: 120px;
+}
+
+/* TEXT */
+.image-card h3 {
+    margin-top: 10px;
+    color: #333;
+}
